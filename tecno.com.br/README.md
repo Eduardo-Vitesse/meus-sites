@@ -1,0 +1,1 @@
+Site feito todo no html, css e javascript para mostrar efeitos no menu e background animado na capa, usando jQuery.

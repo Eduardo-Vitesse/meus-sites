@@ -1,0 +1,296 @@
+/* CSS RESET */
+* { margin: 0;padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif;}
+ul,nav { list-style: none; }
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+/* MENU */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background: transparent;
+    position: fixed;
+    z-index: 1;
+}
+header img {
+    height: 70px;
+    margin: 15px 0 0 50px;
+    cursor: pointer;
+}
+header img:hover {
+    opacity: 0.7;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+header ul li {
+    margin-right: 30px;
+}
+header ul li a {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+header ul li a:hover {
+    color: #555555;
+}
+header #btn-menu {
+    display: none;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+/* MENU RESPONSIVO */
+.menu {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+}
+.menu #btn-closed {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 30px;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.menu #btn-closed:hover{
+    opacity: 0.7;
+}
+.menu ul li {
+    margin-top: 80px;
+}
+.menu ul li a {
+    font-size: 2rem;
+    color: #ffffff;
+}
+.menu ul li a:hover {
+    color: #555555;
+}
+
+@media (max-width:900px){
+    header ul {
+        display: none;
+    }
+    header #btn-menu {
+        display: block;
+        margin-top: 30px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    header #btn-menu:hover {
+        opacity: 0.7;
+    }
+
+}
+
+/* CAPA */
+.capa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.capa h1 {
+    font-size: 5rem;
+    color: #ffffff;
+}
+@media (max-width:900px){
+    .capa h1 {
+        font-size: 3rem;
+    }
+}
+
+/* SOBRE */
+.sobre {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+.sobre h2 {
+    font-size: 3rem;
+    padding: 100px 0 50px 0;
+}
+.sobre p {
+    font-size: 1.5rem;
+    padding: 0 80px 100px 80px;
+}
+
+/* SERVIÇOS */
+.servicos {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+.servicos .card {
+    flex: 1;
+    text-align: center;
+}
+.servicos .card img {
+    height: 150px;
+}
+.servicos .card h2 {
+    font-size: 2rem;
+}
+.servicos .card p {
+    padding: 50px;
+    font-size: 1.5rem;
+}
+@media (max-width:1100px){
+    .servicos {
+        flex-direction: column;
+    }
+}
+
+/* PROPAGANDA APELATIVA */
+.propaganda {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+    margin-top: 200px;
+}
+.propaganda h2 {
+    font-size: 3rem;
+    color: #ffffff;
+    padding: 100px 0;
+}
+
+.propaganda .caixa {
+    display: flex;
+    width: 100%;
+}
+
+.propaganda .caixa .box1 {
+    flex: 1;
+    width: 50%;
+}
+.propaganda .caixa .box1 img {
+    max-height: 800px;
+}
+
+.propaganda .caixa .box2 {
+    flex: 1;
+    text-align: center;
+    width: 50%;
+}
+.propaganda .caixa .box2 h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px;
+}
+.propaganda .caixa .box2 img {
+    margin-top: 50px;
+}
+@media (max-width: 1850px){
+    .propaganda .caixa .box1 {
+        display: none;
+    }
+    .propaganda .caixa .box2{
+        width: 100%;
+    }
+    .propaganda .caixa .box2 img {
+        padding-bottom: 100px;
+    }
+}
+@media (max-width: 830px){
+    .propaganda .caixa .box2 img{
+        max-width: 400px;
+    }
+}
+
+/* POSTER */
+.poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/smartphone.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.poster h1 {
+    font-size: 5rem;
+    color: #ffffff;
+}
+@media (max-width: 900px){
+    .poster h1{
+        font-size: 3rem;
+    }
+}
+
+/* CONTATO */
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.contato .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.contato .titulo h2 {
+    font-size: 3rem;
+    padding: 100px 0;
+}
+
+.contato form {
+    width: 90%;
+    margin-bottom: 200px;
+}
+.contato form input {
+    width: 100%;
+    height: 3em;
+    margin-top: 20px;
+}
+.contato form #msg {
+    width: 100%;
+    height: 15em;
+    margin-top: 20px;
+}
+.contato form #btn {
+    width: 100px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background: #000000;
+    color: #ffffff;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+.contato form #btn:hover {
+    background: #555555;
+}
+
+/* RODAPÉ */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: #000000;
+}
+footer p {
+    color: #ffffff;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Artful Wonder - Fotografia</title>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.cycle.all.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="img/icon.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+</head>
+<body>
+	<!-- Cabeçalho e menu -->
+	<header>
+		<div class="logo">
+			<img src="img/logo.png" style="width: 200px;">
+		</div>
+		<ul>
+			<li><a href="#">CASAMENTOS</a></li>
+			<li><a href="#">PRÉ WEDDING</a></li>
+			<li><a href="#">NEWBORN</a></li>
+			<li><a href="#">CONTATO</a></li>
+		</ul>
+	</header>
+
+<!-- Capa -->
+	<section class="capa">
+		<div class="img-item1">
+		</div>
+		<div class="img-item2">
+		</div>
+		<div class="img-item3">
+		</div>
+		<div class="img-item4">
+		</div>
+	</section>
+	<script>
+		$(document).ready(function(){
+			$('.capa').cycle({
+				timeout: 2000,
+				fx: 'fade',
+			});
+		})
+	</script>
+
+<!-- Sobre -->
+	<section class="sobre">
+		<h1>Sobre a Artful Wonder Fotografia</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem minima deserunt, molestias harum! Neque, facere iure dicta possimus cum nemo quia, itaque velit suscipit, veniam perferendis iste doloremque illo fugiat. Voluptates officiis accusantium, quod porro, fugit modi, commodi cupiditate impedit illum recusandae sed vero doloremque eos sit cumque? Minus delectus corrupti, culpa quo neque harum! Inventore nisi officia soluta aperiam doloribus et aspernatur non hic autem laudantium ratione facere atque ipsam, esse maxime suscipit, magnam, earum consequatur assumenda. Quis deserunt incidunt in, cumque est. Necessitatibus dignissimos tempore aliquam magni cupiditate omnis soluta fuga vero, blanditiis alias, at iste nam, illo.</p>
+	</section>
+
+<!-- Banner -->
+<div class="banner">
+	<h2>Faremos seus sonhos se tornar realidade!</h2>
+	<a href="#">Vamos conversar</a>
+</div>
+
+<!-- Portifólio -->
+<div class="galeria">
+	<h2>Alguns de nossos trabalhos</h2>
+	<div class="albumPrimery">
+		<div class="foto1"></div>
+		<div class="foto2"></div>
+		<div class="foto3"></div>
+	</div>
+	<div class="albumSecond">
+		<div class="foto4"></div>
+		<div class="foto5"></div>
+		<div class="foto6"></div>
+	</div>
+</div>
+<section class="titulo">
+	<h2>Contato</h2>
+</section>
+
+<section class="contato">
+	<div class="fotoAmostra"></div>
+	<form>
+		<input type="text" name="nome" placeholder="NOME">
+		<input type="email" name="email" placeholder="E-MAIL">
+		<textarea id="msg"></textarea>
+		<input id="btn" type="submit" name="submit" value="ENVIAR">
+	</form>
+	
+</section>
+
+<footer>
+	<p>Todos os direitos resevados - 2019</p>
+</footer>
+</body>
+</html>
